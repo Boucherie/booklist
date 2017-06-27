@@ -2,7 +2,7 @@ class BooksController < ApplicationController
 
   def index
     @books = Book.all
-    # @books = @books.order(:author)
+    respond_to :html
   end
 
 end
